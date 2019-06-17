@@ -1,7 +1,11 @@
-dependencies = ['torch', 'torchvision']
+dependencies = ['scipy', 'torch', 'torchvision']
 
 from models.gen_efficientnet import tf_efficientnet_b0, tf_efficientnet_b1, tf_efficientnet_b2, tf_efficientnet_b3
 from sotabench.image_classification import imagenet
+
+import torchvision.transforms as transforms
+import PIL
+
 
 def benchmark():
 
