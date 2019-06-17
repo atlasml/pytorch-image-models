@@ -18,7 +18,7 @@ def benchmark():
     ])
 
     imagenet.benchmark(
-        model=tf_efficientnet_b0(num_classes=1000, pretrained=True, input_transform=input_transform),
+        model=tf_efficientnet_b0(num_classes=1000, pretrained=True),
         paper_model_name='EfficientNet',
         paper_arxiv_id='1905.11946',
         paper_pwc_id='efficientnet-rethinking-model-scaling-for',
